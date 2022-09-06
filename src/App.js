@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import connectWallet from "./components/connectWallet.js";
 
 function App() {
+  let [address, setAddress] = useState("Connect Wallet");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-blue-300 h-screen'>
+      <div className="connect-button">
+        <button className="connect-wallet bg-orange-700 rounded-r-2xl hover:bg-orange-500 px-2 py-2" onClick={connectWallet} setAddress={setAddress}>{address}</button>
+      </div>
     </div>
   );
 }
+
 
 export default App;

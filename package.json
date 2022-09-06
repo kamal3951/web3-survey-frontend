@@ -6,9 +6,19 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@thirdweb-dev/react": "^2.9.6",
+    "@thirdweb-dev/sdk": "^2.4.8",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "connectkit": "^0.0.2",
+    "ethers": "^5.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "use-sync-external-store": "^1.2.0",
+    "wagmi": "^0.6.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
